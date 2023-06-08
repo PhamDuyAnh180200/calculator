@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Caculator</h1><br>
+    <br>
+    <input type="number" id="sothunhat" placeholder="nhap so thu 1">
+    <input type="number" id="sothuhai" placeholder="nhap so thu 2"><br>
+    <br>
+    <button type="button" onclick="Addition()">Addition(+)</button>
+    <button type="button" onclick="Subtraction()">Subtraction(-)</button>
+    <button type="button" onclick="Multiplication()">Multiplication(*)</button>
+    <button type="button" onclick="Division()">Division(/)</button>
+    <br>
+    <div id="result"></div>
+</body>
+</html>
+<script>
+    function Addition() {
+        let number1 = document.getElementById("sothunhat").value;
+        let number2 = document.getElementById("sothuhai").value;
+        let result =parseFloat(number1) + parseFloat(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function Subtraction() {
+        let number1 = document.getElementById("sothunhat").value;
+        let number2 = document.getElementById("sothuhai").value;
+        let result =parseFloat(number1) - parseFloat(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function Multiplication() {
+        let number1 = document.getElementById("sothunhat").value;
+        let number2 = document.getElementById("sothuhai").value;
+        let result =parseFloat(number1) * parseFloat(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+    function Division() {
+        let number1 = document.getElementById("sothunhat").value;
+        let number2 = document.getElementById("sothuhai").value;
+        let result =parseFloat(number1) / parseFloat(number2);
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
